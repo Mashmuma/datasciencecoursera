@@ -20,7 +20,7 @@ df <- read.csv("C:/Users/Mashmuma.qurban/Downloads/repdata_data_activity/activit
 
 ## What is mean total number of steps taken per day?
 
-```{r}
+```{r echo=TRUE}
 library(ggplot2)
 total.steps <- tapply(df$steps, df$date, FUN = sum, na.rm = TRUE)
 qplot(total.steps, binwidth = 1000, xlab = "total number of steps taken each day")

@@ -383,7 +383,7 @@ $(document).ready(function () {
 </div>
 <div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level2">
 <h2>What is mean total number of steps taken per day?</h2>
-<p><code>{r echo = TRUE} library(ggplot2) total.steps &lt;- tapply(df$steps, df$date, FUN = sum, na.rm = TRUE) qplot(total.steps, binwidth = 1000, xlab = &quot;total number of steps taken each day&quot;) mean(total.steps, na.rm=TRUE) median(total.steps, na.rm=TRUE)</code></p>
+<p><code>{r echo=TRUE} library(ggplot2) total.steps &lt;- tapply(df$steps, df$date, FUN = sum, na.rm = TRUE) qplot(total.steps, binwidth = 1000, xlab = &quot;total number of steps taken each day&quot;) mean(total.steps, na.rm=TRUE) median(total.steps, na.rm=TRUE)</code></p>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
 <h2>What is the average daily activity pattern?</h2>
