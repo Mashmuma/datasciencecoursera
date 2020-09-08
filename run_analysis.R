@@ -17,7 +17,7 @@ subject_test <- read.table("C:/Users/Mashmuma/Downloads/getcleandata/UCI HAR Dat
 
 features <- read.table("C:/Users/Mashmuma/Downloads/getcleandata/UCI HAR Dataset/features.txt")
 
-activityLabels = read.table("C:/Users/Mashmuma/Downloads/getcleandata/UCI HAR Dataset/activity_labels.txt")
+activityLabels <- read.table("C:/Users/Mashmuma/Downloads/getcleandata/UCI HAR Dataset/activity_labels.txt")
 
 colnames(x_train) <- features[,2]
 colnames(y_train) <- "activityID"
